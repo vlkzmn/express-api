@@ -7,7 +7,7 @@ import { dbService } from './services/dbService.js';
 
 const emitter = new EventEmitter();
 
-const wss = new WebSocketServer({ port: process.env.PORT });
+const wss = new WebSocketServer({ port: 5000 });
 
 wss.on('listening', () => console.log('server started'));
 
